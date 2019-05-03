@@ -1,0 +1,19 @@
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    .child {
+        width: 100px;
+        height: 100px;
+        background-color: darkcyan;
+    }
+}
+
+.staticlogo {
+    width: 150px;
+    height: 100px;
+}
+
+.iconStyle {
+    font-size: 30px!important;
+}
