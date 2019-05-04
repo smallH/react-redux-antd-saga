@@ -12,6 +12,7 @@ class Search extends React.Component {
                 <div>
                     <div>CSS测试</div>
                 </div>
+                <img style={{ width: '150px',height: '100px'}} src= {process.env.PUBLIC_URL + '/assets/static_logo.jpg'}/>
            </div>
         );
     }
