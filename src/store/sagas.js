@@ -6,7 +6,7 @@ function* mySaga(){
     yield takeEvery(T.SAGA_PRODUCTS, function* requestProducts(e){
         console.log(e); // e为saga传递的参数对象
         try{
-            const result = yield http('/data/products.json');
+            const result = yield http(`${process.env.PUBLIC_URL}` + 'assets/data/products.json');
             yield put({type:T.INIT_PRODUCTS, payload:result});
         }catch(e){
             yield put({type:T.INIT_PRODUCTS, payload:[]});

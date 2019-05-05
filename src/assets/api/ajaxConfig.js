@@ -8,9 +8,9 @@ export default function(store) {
 	
 	// 请求域名
 	if(process.env.NODE_ENV === 'production') {
-		_prefix = `${process.env.HOST}/api`;
+		_prefix = `${process.env.HOST}/`;
 	} else {
-		_prefix = '/api';
+		_prefix = '/';
     }
     console.log('store:', store);
 	console.log('process.env:',process.env);
